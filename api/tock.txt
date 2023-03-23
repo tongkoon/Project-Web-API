@@ -1,0 +1,92 @@
+Login Admin             /admin/login
+{
+    "username":"admin",
+    "password":"0000"
+}
+
+Login Customer          /customer/login
+{
+    "username":"tock",
+    "password":"1234"
+}
+
+Customer Register       /customer/register
+{
+    "username":"tiktok",
+    "password":"1234"
+}
+
+Select Order            /iorder
+Show Order by cusID     /iorder/cusID/{cusID}
+Ex. /iorder/cusID/5
+
+Insert Order            /iorder/insert
+{
+    "cid":""
+}
+
+Insert History          /history/insert
+{
+    "oid":"",
+    "cid":"",
+    "name":"ttok",
+    "phone":"061514",
+    "address":"thailand"
+}
+
+Insert Cart             /cart/insert
+[
+    {
+        "fid":"12",
+        "amount":"5"
+    },
+    {
+        "fid":"5",
+        "amount":"3"
+    }
+]
+
+calculatePrice          /cart/calculatePrice
+[
+    {
+        "fid":"12",
+        "amount":"5"
+    },
+    {
+        "fid":"5",
+        "amount":"3"
+    }
+]
+
+Select Foods            /foods
+Select Foods by tid     /foods/tid/{tid}
+Insert Food             /foods/insert
+{
+	"name": "Test Food",
+	"price": "55",
+	"image": "https://i.pinimg.com/originals/dc/f0/46/dcf04604b9bf9374ee40bcdd8050c870.jpg",
+ 	"tid":"1"
+}
+
+Delete Food             /foods/delete
+{
+    "fid":""
+}
+
+Update Food             /foods/update
+{
+    "tid":"",
+    "fid":"",
+    "name":"",
+    "price":"",
+    "image":""
+}
+
+Search Type by fid      /type/search/{fid}
+Select Type Total       /type
+
+/cart/foodItem
+
+
+
+
